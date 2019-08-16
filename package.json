@@ -11,7 +11,7 @@
         "vscode": "^1.37.0"
     },
     "license": "MIT",
-    "icon": "./images/rails.png",
+    "icon": "images/rails.png",
     "categories": [
         "Programming Languages"
     ],
