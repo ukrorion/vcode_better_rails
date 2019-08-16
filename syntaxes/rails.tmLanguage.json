@@ -1,0 +1,22 @@
+{
+	"injectionSelector": "L:source.ruby",
+	"patterns": [
+		{ "include": "#activerecord" }
+	],
+	"repository": {
+		"activerecord": {
+			"patterns": [
+				{ "include": "#keywords" }
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.activerecord.rails",
+					"match": "\\b(scope|has_many|belongs_to|has_secure_password)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "rails.injection"
+}

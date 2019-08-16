@@ -1,0 +1,30 @@
+{
+    "name": "vcode_better_rails",
+    "displayName": "Better Rails",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [
+          {
+            "scopeName": "rails.injection",
+            "path": "./syntaxes/rails.tmLanguage.json",
+            "injectTo": [
+                "source.ruby"
+            ]
+          },
+          {
+            "scopeName": "haml.injection",
+            "path": "./syntaxes/haml-extend.tmLanguage.json",
+            "injectTo": [
+              "text.haml"
+            ]
+          }
+        ]
+    }
+}

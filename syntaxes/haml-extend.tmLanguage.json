@@ -1,0 +1,26 @@
+{
+  "injectionSelector": "L:text.haml",
+  "patterns": [
+    {
+      "include": "#methods"
+    }
+  ],
+  "repository": {
+    "methods": {
+      "patterns": [
+        {
+          "include": "#keywords"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "methods.activeviews.rails",
+          "match": "\\b(render|link_to)\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "haml.injection"
+}
