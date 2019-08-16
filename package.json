@@ -1,14 +1,25 @@
 {
-    "name": "vcode_better_rails",
+    "name": "vscode-better-rails",
     "displayName": "Better Rails",
     "description": "",
+    "publisher": "ukrorion",
     "version": "0.0.1",
+    "author": {
+      "name": "Oleksandr Ostach"
+    },
     "engines": {
         "vscode": "^1.37.0"
     },
+    "license": "MIT",
+    "icon": "./images/rails.png",
     "categories": [
         "Programming Languages"
     ],
+    "private": false,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ukrorion/vscode-better-rails.git"
+    },
     "contributes": {
         "grammars": [
           {
