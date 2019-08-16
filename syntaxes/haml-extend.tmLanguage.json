@@ -16,8 +16,8 @@
     "keywords": {
       "patterns": [
         {
-          "name": "methods.activeviews.rails",
-          "match": "\\b(render|link_to)\\b"
+          "name": "helpers.activeviews.rails",
+          "match": "\\b(link_to)\\b"
         }
       ]
     }
