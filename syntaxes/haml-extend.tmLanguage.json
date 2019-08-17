@@ -1,23 +1,27 @@
 {
   "injectionSelector": "L:text.haml",
   "patterns": [
-    {
-      "include": "#methods"
-    }
+    { "include": "#entities" },
+    { "include": "#keywords" }
   ],
   "repository": {
-    "methods": {
+    "entities": {
       "patterns": [
         {
-          "include": "#keywords"
+          "name": "support.function.activerecord.rails",
+          "match": "\\b(link_to)\\b"
         }
       ]
     },
     "keywords": {
       "patterns": [
         {
-          "name": "helpers.activeviews.rails",
-          "match": "\\b(link_to)\\b"
+          "name": "support.function.actionpack.rails",
+          "match": "(?<=\\=\\s)render(?=\\(|\\s)"
+        },
+        {
+          "name": "support.function.actionpack.rails",
+          "match": "(?<=\\=\\s)([a-z|_]+[?|!]?)(?=\\(|\\s)"
         }
       ]
     }

@@ -21,21 +21,28 @@
       "url": "https://github.com/ukrorion/vscode-better-rails.git"
     },
     "contributes": {
-        "grammars": [
-          {
-            "scopeName": "rails.injection",
-            "path": "./syntaxes/rails.tmLanguage.json",
-            "injectTo": [
-                "source.ruby"
-            ]
-          },
-          {
-            "scopeName": "haml.injection",
-            "path": "./syntaxes/haml-extend.tmLanguage.json",
-            "injectTo": [
-              "text.haml"
-            ]
-          }
-        ]
+      "themes": [
+        {
+          "label": "Twilight +",
+          "uiTheme": "vs-dark",
+          "path": "./themes/twilight-plus.tmTheme"
+        }
+      ],
+      "grammars": [
+        {
+          "scopeName": "rails.injection",
+          "path": "./syntaxes/rails.tmLanguage.json",
+          "injectTo": [
+              "source.ruby"
+          ]
+        },
+        {
+          "scopeName": "haml.injection",
+          "path": "./syntaxes/haml-extend.tmLanguage.json",
+          "injectTo": [
+            "text.haml"
+          ]
+        }
+      ]
     }
 }
