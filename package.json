@@ -3,7 +3,7 @@
     "displayName": "Better Rails",
     "description": "",
     "publisher": "ukrorion",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": {
       "name": "Oleksandr Ostach"
     },
@@ -23,22 +23,22 @@
     "contributes": {
       "themes": [
         {
-          "label": "Twilight +",
+          "label": "Twilight Plus",
           "uiTheme": "vs-dark",
-          "path": "./themes/twilight-plus.tmTheme"
+          "path": "./themes/twilight-custom.tmTheme.json"
         }
       ],
       "grammars": [
         {
-          "scopeName": "rails.injection",
+          "scopeName": "source.rails",
           "path": "./syntaxes/rails.tmLanguage.json",
           "injectTo": [
               "source.ruby"
           ]
         },
         {
-          "scopeName": "haml.injection",
-          "path": "./syntaxes/haml-extend.tmLanguage.json",
+          "scopeName": "embedded.rails",
+          "path": "./syntaxes/haml.tmLanguage.json",
           "injectTo": [
             "text.haml"
           ]

@@ -12,11 +12,27 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name": "support.function.activerecord.rails",
+					"name": "support.function.activerecord.ruby",
 					"match": "\\b(scope|has_many|belongs_to|has_secure_password|has_one)\\b"
+				},
+				{
+					"name": "attributes.method.activerecord.ruby",
+					"match": "\\b(accepts_nested_attributes_for|validates?)\\b"
+				},
+				{
+					"name": "callbacks.method.activerecord.ruby",
+					"match": "\\b(after|before|around)_(validation|save|destroy)\\b"
+				},
+				{
+					"name": "support.function.special.ruby",
+					"match": "(?<=\\]\\.|\\}\\.)freeze(?=\\s)"
+				},
+				{
+					"name": "support.hash.key.ruby",
+					"match": "((\\b[a-z_][\\w]+:\\B)|((:[a-z_]\\w+\\b)(?=\\s=>)))+"
 				}
 			]
 		}
 	},
-	"scopeName": "rails.injection"
+	"scopeName": "source.rails"
 }
