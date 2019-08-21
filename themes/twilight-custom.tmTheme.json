@@ -578,37 +578,37 @@
     },
     {
       "name": "§ css tag-name",
-      "scope": "meta.selector.css entity.name.tag",
+      "scope": "entity.name.tag.css",
       "settings": {
-        "foreground": "#CDA869"
+        "foreground": "#b1cf42"
       }
     },
     {
       "name": "§ css:pseudo-class",
-      "scope": "meta.selector.css entity.other.attribute-name.tag.pseudo-class",
+      "scope": "entity.other.attribute-name.tag.pseudo-class",
       "settings": {
         "foreground": "#8F9D6A"
       }
     },
     {
       "name": "§ css#id",
-      "scope": "meta.selector.css entity.other.attribute-name.id",
+      "scope": "entity.other.attribute-name.id.css",
       "settings": {
-        "foreground": "#8B98AB"
+        "foreground": "#a2c0ec"
       }
     },
     {
       "name": "§ css.class",
-      "scope": "meta.selector.css entity.other.attribute-name.class",
+      "scope": "entity.other.attribute-name.class.css",
       "settings": {
-        "foreground": "#9B703F"
+        "foreground": "#ff934a"
       }
     },
     {
       "name": "§ css property-name:",
       "scope": "support.type.property-name.css",
       "settings": {
-        "foreground": "#C5AF75"
+        "foreground": "#c7964c"
       }
     },
     {
