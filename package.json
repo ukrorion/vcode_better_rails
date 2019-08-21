@@ -44,5 +44,9 @@
           ]
         }
       ]
+    },
+    "scripts": {
+      "vs:build": "vsce package",
+      "vs:install": "code --install-extensions"
     }
 }
