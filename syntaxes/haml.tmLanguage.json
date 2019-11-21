@@ -7,11 +7,11 @@
     "keywords": {
       "patterns": [
         {
-          "name": "support.function.actionpack.rails",
+          "name": "support.function.rails render.actionpack.rails",
           "match": "(?<=\\=\\s)render(?=\\(|\\s)"
         },
         {
-          "name": "support.function.helper.method.rails",
+          "name": "support.function.rails helper.method.rails",
           "match": "(?<=\\=\\s)([a-z|_]+[?|!]?)(?=\\(|\\s)"
         }
       ]

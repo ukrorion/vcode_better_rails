@@ -1,38 +1,39 @@
 {
-	"injectionSelector": "L:source.ruby",
-	"patterns": [
-		{ "include": "#activerecord" }
-	],
-	"repository": {
-		"activerecord": {
-			"patterns": [
-				{ "include": "#keywords" }
-			]
-		},
-		"keywords": {
-			"patterns": [
-				{
-					"name": "support.function.activerecord.ruby",
-					"match": "\\b(scope|has_many|belongs_to|has_secure_password|has_one)\\b"
-				},
-				{
-					"name": "attributes.method.activerecord.ruby",
-					"match": "\\b(accepts_nested_attributes_for|validates?)\\b"
-				},
-				{
-					"name": "callbacks.method.activerecord.ruby",
-					"match": "\\b(after|before|around)_(validation|save|destroy)\\b"
-				},
-				{
-					"name": "support.function.special.ruby",
-					"match": "(?<=\\]\\.|\\}\\.)freeze(?=\\s)"
-				},
-				{
-					"name": "support.hash.key.ruby",
-					"match": "((\\b[a-z_][\\w]+:\\B)|((:[a-z_]\\w+\\b)(?=\\s=>)))+"
-				}
-			]
-		}
-	},
-	"scopeName": "source.rails"
+  "injectionSelector": "L:source.ruby",
+  "patterns": [
+    { "include": "#rails" }
+  ],
+  "repository": {
+    "rails": {
+      "patterns": [
+        { "include": "#activerecord" },
+        { "include": "#activemodel" }
+      ]
+    },
+    "activerecord": {
+      "patterns": [
+        {
+          "name": "support.function support.function.rails function.associations.activerecord.rails",
+          "match": "\\b(has_many|belongs_to|has_one|has_and_belongs_to_many)\\b"
+        },
+        {
+          "name": "support.variable support.variable.rails variable.associations.activerecord.rails",
+          "match": "\\b(scope)\\b"
+        },
+        {
+          "name": "support.function support.function.rails function.callbacks.activerecord.rails",
+          "match": "\\b(after|before|around)_(validation|save|destroy|commit|initialize|rollback|update|find)\\b"
+        }
+      ]
+    },
+    "activemodel": {
+      "patterns": [
+        {
+          "name": "support.function support.function.rails function.validations.activemodel.rails",
+          "match": "\\b(accepts_nested_attributes_for|validates?|validates_(absence|acceptance|confirmation|exclusion|format|inclusion|length|numericality|presence|size)_of)\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.rails"
 }

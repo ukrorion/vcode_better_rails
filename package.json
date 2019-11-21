@@ -3,7 +3,7 @@
     "displayName": "Better Rails",
     "description": "",
     "publisher": "ukrorion",
-    "version": "0.0.3",
+    "version": "0.0.6",
     "author": {
       "name": "Oleksandr Ostach"
     },
@@ -25,7 +25,7 @@
         {
           "label": "Twilight Plus",
           "uiTheme": "vs-dark",
-          "path": "./themes/twilight-custom.tmTheme.json"
+          "path": "./themes/twilight-plus.tmTheme"
         }
       ],
       "grammars": [
@@ -44,9 +44,5 @@
           ]
         }
       ]
-    },
-    "scripts": {
-      "vs:build": "vsce package",
-      "vs:install": "code --install-extensions"
     }
 }
