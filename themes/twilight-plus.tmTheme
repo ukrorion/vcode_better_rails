@@ -674,6 +674,19 @@
       </dict>
     </dict>
 
+    <!-- Ruby Custom Color -->
+    <dict>
+      <key>name</key>
+      <string>Ruby method params</string>
+      <key>scope</key>
+      <string>variable.parameter.function.ruby, constant.language.symbol.hashkey.parameter.function.ruby</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#7ECCFF</string>
+      </dict>
+    </dict>
+
     <!-- Ruby on Rails -->
     <!-- ActiveRecord -->
     <dict>
