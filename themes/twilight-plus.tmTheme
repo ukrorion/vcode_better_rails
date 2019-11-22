@@ -686,6 +686,17 @@
         <string>#7ECCFF</string>
       </dict>
     </dict>
+    <dict>
+      <key>name</key>
+      <string>Ruby hash key</string>
+      <key>scope</key>
+      <string>constant.language.symbol.hashkey.ruby</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#FFC2AC</string>
+      </dict>
+    </dict>
 
     <!-- Ruby on Rails -->
     <!-- ActiveRecord -->
